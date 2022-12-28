@@ -140,7 +140,7 @@ body{
     color: var(--primary-text-color);
     letter-spacing: 0.02em;
     padding-top: 24px;
-        padding-bottom: 24px;
+    padding-bottom: 24px;
 }
     /* ===================оформлення студіо=================== */
 /* оформлення мейна */
@@ -150,6 +150,12 @@ body{
 
 .hero {
     background-color:var(--accent-text-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)), url(../images/img/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
     padding-bottom: 188px;
     padding-top: 188px;
 }
@@ -265,9 +271,43 @@ body{
     margin-bottom: 8px;
 }
 .team-text {
-    margin-bottom: 32px;
     font-weight: 400;
+   margin-bottom: 8px;
 } 
+/* соц-мережі під фото */
+.tem-soc-listm {
+    margin-bottom: 32px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.list {}
+
+.tem-soc-item {
+    width: 40px;
+    height: 40px;
+
+}
+
+.link {}
+
+.tem-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.tem-soc-link:hover,
+.tem-soc-link:focus
+{
+    background-color: #404BBF;
+}
 /* секція п'ять */
 .customers {
 padding-top: 130px;
@@ -319,6 +359,39 @@ margin-bottom: 72px;
     margin-top: 16px;
     width: 264px;
     height: 72px;
+}
+.footer-soc{
+    display: flex;
+}
+.footer-soc-name{
+    color: var(--primary-background-color);
+}
+.footer-soc-listm {
+    margin-bottom: 32px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-soc-item {
+    width: 40px;
+    height: 40px;
+
+}
+
+.footer-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-text-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-soc-link:hover,
+.footer-soc-link:focus{
+    background-color: #31D0AA;
 }
 /* =============оформлення портфоліо=================== */
 /* оформлення мейна */
