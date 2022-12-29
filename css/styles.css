@@ -219,6 +219,15 @@ body{
     font-size: 16px;
     line-height: 1.5;
 } 
+/* .direction-list::before{
+    width: 265px;
+    height: 112px;
+    display: block;
+    background-repeat: no-repeat;
+    background-color: var(--accent-background-color);
+    background-position: center;
+} */
+.
 /* оформлення мейна секція три */
 /* .work {
 } */
