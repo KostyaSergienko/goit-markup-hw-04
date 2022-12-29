@@ -144,10 +144,8 @@ body{
 }
     /* ===================оформлення студіо=================== */
 /* оформлення мейна */
-/* .main-page{
-} */
-/* оформлення мейна секція один */
 
+/* оформлення мейна секція один */
 .hero {
     background-color:var(--accent-text-color);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
@@ -285,11 +283,7 @@ body{
 .tem-soc-item {
     width: 40px;
     height: 40px;
-
 }
-
-.link {}
-
 .tem-soc-link {
     width: 100%;
     height: 100%;
@@ -309,12 +303,12 @@ body{
 }
 /* секція п'ять */
 .customers {
-padding-top: 130px;
+    padding-top: 130px;
 }
 
 .customerst-title{
-text-align: center;
-margin-bottom: 72px;
+    text-align: center;
+    margin-bottom: 72px;
 }
 
 .customers-list {
@@ -324,8 +318,8 @@ margin-bottom: 72px;
     gap: 24px;
 }
 .customers-item {
-width: calc((100% - 150px) / 6);
-height: 92px;
+    width: calc((100% - 150px) / 6);
+    height: 92px;
 }
 .customers-link {
     width: 100%;
@@ -339,10 +333,11 @@ height: 92px;
 .customers-link:hover{
     border-color: #404BBF;
 }
-.customers-link:hover,
-.customers-link:focus .customers-icon{
+.customers-link:hover .customers-icon{
     fill: #404BBF;
 }
+.customers-link:focus .customers-icon {
+    fill: #404BBF;}
 .customers-icon {
     fill: #8E8F99;
 }
@@ -390,7 +385,6 @@ height: 92px;
     width: 264px;
     height: 72px;
 }
-
 .footer-soc {
     display: flex;
     flex-direction: column;
@@ -398,8 +392,6 @@ height: 92px;
     align-items: flex-start;
     margin-left: 120px;
 }
-
-
 .footer-soc-text {
     display:flex;
     font-weight: 600;
@@ -408,7 +400,6 @@ height: 92px;
     color: var(--primary-background-color);
     margin-bottom: 16px;
 }
-
 .footer-soc-listm {
     margin-bottom: 32px;
     display: flex;
@@ -416,12 +407,10 @@ height: 92px;
     justify-content: center;
     align-items: center;
 }
-
 .footer-soc-item {
     width: 40px;
     height: 40px;
 }
-
 .footer-soc-link {
     width: 100%;
      height: 100%;
@@ -466,18 +455,26 @@ height: 92px;
     min-width: 69px;
     height: 48px;
     border-radius: 4px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     padding: 12px 24px;
 }
-.portfolio-button:hover{
+.portfolio-button:hover,
+.portfolio-button:focus{
     color:var(--primary-background-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* .portfolio-button:focus{
 } */
 /* оформлення секції два */
 /* .product {
 } */
+.product-item{
+    margin-bottom: 48px;
+}
+.product-item:hover,
+.product-item:focus{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
 .product-list {
     display: flex;
     flex-wrap: wrap;
