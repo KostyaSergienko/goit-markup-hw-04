@@ -53,7 +53,7 @@ body{
 }
 .container{
     width: 1158px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -219,15 +219,40 @@ body{
     font-size: 16px;
     line-height: 1.5;
 } 
-/* .direction-list::before{
-    width: 265px;
+.direction-item::before{
+    content: '';
     height: 112px;
     display: block;
     background-repeat: no-repeat;
     background-color: var(--accent-background-color);
     background-position: center;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+/* .direction-item:nth-child(1)::before{
+    background-image: url(../images/svg/antenna\ 1\ \(1\).svg);
+}
+.direction-item:nth-child(2)::before{
+    background-image: url(../images/svg/clock\ 1.svg);
+}
+.direction-item:nth-child(3)::before{
+    background-image: url(../images/svg/diagram\ 1.svg);
+}
+.direction-item:nth-child(4)::before{
+    background-image: url(../images/svg/astronaut\ 1.svg);
 } */
-.
+.icon-strategy::before{
+    background-image: url(../images/svg/antenna\ 1\ \(1\).svg);
+}
+.icon-punclity::before{
+    background-image: url(../images/svg/clock\ 1.svg);
+}
+.icon-diligence::before{
+    background-image: url(../images/svg/diagram\ 1.svg);
+}
+.icon-technologies::before{
+    background-image: url(../images/svg/astronaut\ 1.svg);
+}
 /* оформлення мейна секція три */
 /* .work {
 } */
@@ -250,7 +275,7 @@ body{
 /* оформлення мейна секція чотири*/
 .tem {
     background-color:var(--accent-background-color);
-    
+    padding-top: 120px;
 }
 .team-title {
     text-align: center;
