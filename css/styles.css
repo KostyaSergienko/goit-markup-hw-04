@@ -206,7 +206,7 @@ body{
 } 
 .direction-item {
     margin-right: 24px;
-} 
+}
 .direction-item:last-child{
     margin-right: 0px;
 }
@@ -219,7 +219,20 @@ body{
     font-size: 16px;
     line-height: 1.5;
 } 
-.direction-item::before{
+.direction-section{
+    content: '';
+    height: 112px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-color: var(--accent-background-color);
+    background-position: center;
+    border-radius: 4px;
+    padding: 24px 100px;
+        margin-bottom: 8px;
+}
+/* .direction-item::before{
     content: '';
     height: 112px;
     display: block;
@@ -228,7 +241,7 @@ body{
     background-position: center;
     margin-bottom: 8px;
     border-radius: 4px;
-}
+} */
 /* .direction-item:nth-child(1)::before{
     background-image: url(../images/svg/antenna\ 1\ \(1\).svg);
 }
@@ -241,7 +254,7 @@ body{
 .direction-item:nth-child(4)::before{
     background-image: url(../images/svg/astronaut\ 1.svg);
 } */
-.icon-strategy::before{
+/* .icon-strategy::before{
     background-image: url(../images/svg/antenna\ 1\ \(1\).svg);
 }
 .icon-punclity::before{
@@ -252,7 +265,7 @@ body{
 }
 .icon-technologies::before{
     background-image: url(../images/svg/astronaut\ 1.svg);
-}
+} */
 /* оформлення мейна секція три */
 /* .work {
 } */
@@ -449,7 +462,7 @@ body{
 .footer-soc-link {
     width: 100%;
      height: 100%;
-    background-color:#8E8F99;
+    background-color:var(--primary-text-color);
     border-radius: 50%;
     display: flex;
     align-items: center;
