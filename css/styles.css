@@ -63,7 +63,7 @@ body{
     padding-bottom: 120px;
 }
 /*====оформлення хедера для студіо та портфоліо======*/
-.header-page {
+.line{
     color: var(--accent-text-color);
     border-bottom: 1px solid #E7E9FC;
 }
@@ -156,6 +156,7 @@ body{
     background-position: center;
     padding-bottom: 188px;
     padding-top: 188px;
+   
 }
 .hero-title {
     font-weight: 700;
