@@ -147,13 +147,13 @@ body{
 
 /* оформлення мейна секція один */
 .hero {
-    background-color:var(--accent-text-color);
+    /* background-color:var(--accent-text-color); */
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)), url(../images/img/hero.jpg);
+
+    background-size: 1440px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-
     padding-bottom: 188px;
     padding-top: 188px;
 }
@@ -536,15 +536,19 @@ body{
     line-height: 1.2;
     color:var(--accent-text-color);
     letter-spacing: 0.02em;
-    margin-top: 32px;
     margin-bottom: 8px;
     margin-left: 16px;
 }
 .product-text {
     font-weight: 400;
-    margin-bottom: 32px;
     margin-left: 16px;
 }
-.text-img{
+/* .text-img{
     border: 1px solid #E7E9FC;
+} */
+.text-img{
+    padding: 32px 0 32px 0;
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
 }
