@@ -47,7 +47,7 @@ body{
 }
 .modal{
     color:var(--accent-text-color);
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
 }
@@ -63,7 +63,7 @@ body{
     padding-bottom: 120px;
 }
 /*====оформлення хедера для студіо та портфоліо======*/
-.line{
+.header-page{
     color: var(--accent-text-color);
     border-bottom: 1px solid #E7E9FC;
 }
@@ -490,14 +490,15 @@ body{
     display: flex;
     justify-content: center;
     gap: 24px;
+    
 } 
 .portfolio-button{
     font-family:var(--primary-font-family);
-    font-weight: 700;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     color:var(--accent-color);
-    background:var(--accent-background-btn);
+    background:var(--accent-background-color);
     cursor: pointer;
     border: none;
     letter-spacing: 0.04em;
@@ -505,11 +506,13 @@ body{
     height: 48px;
     border-radius: 4px;
     padding: 12px 24px;
+    border: 1px solid #E7E9FC;
 }
 .portfolio-button:hover,
 .portfolio-button:focus{
     color:var(--primary-background-color);
     background-color: var(--accent-color-btn);
+    border: 1px solid var(--accent-color-btn);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* .portfolio-button:focus{
@@ -532,7 +535,7 @@ body{
 /* .product-images {
 } */
 .product-decscription {
-    font-weight: 500;
+    font-weight: 500px;
     font-size: 20px;
     line-height: 1.2;
     color:var(--accent-text-color);
