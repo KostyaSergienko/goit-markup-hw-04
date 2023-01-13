@@ -410,7 +410,6 @@ body{
 .customers-link:hover{
     border-color: #404BBF;
 }
-
 .customers-link:hover .customers-icon{
     fill: #404BBF;
 }
