@@ -77,6 +77,7 @@ body{
 .header-navigation {
     display: flex;
     align-items: center;
+    
 } 
 .header-logo { 
     font-family:var(--accent-font-family);
@@ -106,6 +107,7 @@ body{
     gap: 40px;
     padding-top: 24px;
     padding-bottom: 24px;
+     
 }
 .header-list-item {
     font-weight: 500;
@@ -115,6 +117,13 @@ body{
     letter-spacing: 0.02em; 
     padding-top: 24px;
     padding-bottom: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-list-item::after{
+    content: ;
+    display: block;
+    width: 100%;
+    background-color: red;
 }
 .header-page > .container{
     display: flex;
@@ -132,6 +141,7 @@ body{
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-telefone {
     font-weight: 400;
@@ -141,6 +151,7 @@ body{
     letter-spacing: 0.02em;
     padding-top: 24px;
     padding-bottom: 24px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
     /* ===================оформлення студіо=================== */
 /* оформлення мейна */
@@ -189,6 +200,7 @@ body{
     align-items: center;
     margin: 0 auto;
     padding: 16px 32px;
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover,
 .hero-button:focus{
@@ -341,6 +353,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center; 
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .tem-soc-icon{
     fill:var(--primary-background-color);
@@ -378,6 +391,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customers-link:hover{
     border-color: #404BBF;
@@ -468,6 +482,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-soc-icon {
     fill:var(--accent-background-color);
@@ -507,6 +522,7 @@ body{
     border-radius: 4px;
     padding: 12px 24px;
     border: 1px solid #E7E9FC;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-button:hover,
 .portfolio-button:focus{
@@ -522,10 +538,35 @@ body{
 } */
 .product-item{
     margin-bottom: 48px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 .product-item:hover,
 .product-item:focus{
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.product-marketing{
+position: relative;
+overflow: hidden;
+}
+.product-marketing-text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--accent-background-color);
+    background: var(--accent-color);
+    background-blend-mode: soft-light;
+    mix-blend-mode: normal;
+    position: absolute;
+    top: 0;
+    padding: 40px 32px 164px 32px;
+    transform: translateY(100%);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.product-item:hover .product-marketing-text{
+    transform: translateY(0);
+}
+.product-item:focus .product-marketing-text{
+    transform: translateY(0);
 }
 .product-list {
     display: flex;
@@ -555,4 +596,48 @@ body{
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
     border-bottom: 1px solid #E7E9FC;
+}
+/* ========модальне вікно ============*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(46, 47, 66, 0.4);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modality {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 408px;
+    min-height: 576px;
+    background-color: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transform: translate(-50%, -50%) scaleX(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden .modality{
+    transform: translate(-50%, -50%) scaleX(0);
+}
+.modality-close {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    background-color: #E7E9FC;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    width: 24px;
+       
+}
+
+.modality-close-icon {
+   fill: #000;
+
+}
+.is-hidden{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
